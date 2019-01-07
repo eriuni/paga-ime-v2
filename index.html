@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page Ime</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="header">
+
+            <img src="img/logo.png" alt="logo" class="logo">
+            <h1 class="title">LLogarit pagen</h1>
+
+        </header>
+
+        <main class="main">
+
+            <div class="paga">
+
+                <p>Ju lutem, vendosni pagen: </p>
+
+                <input id="userinput" type="number" placeholder="p.sh 24000" class="paga-vendos">
+
+                <div class="paga-lloji">
+                    <input type="radio" id="pagaN" name="paga" checked class="radio">
+                    <label for="pagaN">paga neto</label>
+                    <input type="radio" id="pagaB" name="paga" class="radio">
+                    <label for="pagaB">paga bruto</label>
+                </div>
+
+                <button id="enter" class="buton">Llogarit</button><br>
+
+            </div>
+
+            <div class="vlera">
+            <div class="vlera-paga">
+                <p id="pagaNeto">Paga neto eshte: <strong id="pagaNn"></strong> </p>
+                <p id="pagaBruto">Paga bruto eshte: <strong id="pagaBb"></strong> </p>
+            </div>
+
+            <div class="tap">
+                <p id="pagaBruto">TAP jane: <strong id="tap"></strong> </p>
+            </div>
+
+            <div class="sig-punemarresi">
+                <p id="">Sigurimet shoqerore te punemarresit jane: <strong id="sigShoqPun"></strong> </p>
+                <p id="">Sigurimet shendetesore te punemarresit jane: <strong id="sigShendPun"></strong> </p>
+            </div>
+
+            <div class="sig-punedhenesi">
+                <p id="">Sigurimet shoqerore te punedhenesit jane: <strong id="sigShoqPuna"></strong> </p>
+                <p id="">Sigurimet shendetesore te punedhenesnit jane: <strong id="sigShendPuna"></strong> </p>
+            </div>
+        </div>
+
+        </main>
+
+
+        <footer class="footer">
+            <p>Ndertuar nga <a href="https://github.com/eriuni/paga-ime"">ERIUNI</a></p>
+        </footer>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
