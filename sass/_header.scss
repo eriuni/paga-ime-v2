@@ -1,0 +1,31 @@
+.header {
+    background-color: $primaryLightColor;
+
+    grid-column: 1 / span 2;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+  
+
+    &__logo {
+        height: 6rem;
+
+
+    }
+
+    &__title {
+        color: $primaryTextColor;
+        font-size: 4rem;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        padding-left: 2rem;
+
+        &:hover {
+            animation: pulse 0.7s;
+        }
+
+    }
+}
