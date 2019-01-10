@@ -19,7 +19,7 @@ body {
   padding: 5rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr); }
+  grid-template-rows: repeat(auto-fit, 1fr); }
 
 @keyframes pulse {
   from {
@@ -29,6 +29,23 @@ body {
   to {
     transform: scale(1); } }
 
+.buton {
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: #757de8;
+  outline: 0; }
+  .buton:hover {
+    background-color: #002984;
+    transform: scale(1.1); }
+
 .header {
   background-color: #757de8;
   grid-column: 1 / span 2;
@@ -37,12 +54,42 @@ body {
   justify-content: center;
   align-items: center; }
   .header__logo {
+    padding: .8rem;
     height: 6rem; }
   .header__title {
     color: #ffffff;
     font-size: 4rem;
     letter-spacing: 5px;
+    font-weight: 600;
     text-transform: uppercase;
     padding-left: 2rem; }
     .header__title:hover {
       animation: pulse 0.7s; }
+
+.paga {
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: #ffebee;
+  color: #000000;
+  grid-column: 1 / span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .paga__text {
+    font-size: 2.5rem;
+    padding: 1rem;
+    transition: all .3s; }
+  .paga__vendos {
+    padding: 1rem;
+    border-radius: 10px;
+    border: 2px solid #000;
+    width: 20rem; }
+    .paga__vendos::placeholder {
+      font-style: italic; }
+    .paga__vendos:focus {
+      border-color: #757de8;
+      outline: 0;
+      transform: scale(1.1); }
+  .paga__lloji {
+    padding: 1rem; }

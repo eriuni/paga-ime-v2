@@ -1,0 +1,42 @@
+.paga {
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: $secondaryColor;
+    color: $secondaryTextColor;
+
+    grid-column: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__text {
+        font-size: 2.5rem;
+        padding: 1rem;
+        transition: all .3s;
+    }
+
+    &__vendos {
+        padding: 1rem;
+        border-radius: 10px;
+        border: 2px solid #000;
+        width: 20rem;
+        
+        &::placeholder {
+            font-style: italic;
+        }
+
+        &:focus {
+            border-color: $primaryLightColor;
+            outline: 0;
+            transform: scale(1.1);  
+
+        }
+    
+    }
+
+    &__lloji {
+        padding: 1rem;
+
+    }
+}

@@ -11,8 +11,9 @@
   
 
     &__logo {
+        padding: .8rem;
         height: 6rem;
-
+        
 
     }
 
@@ -20,6 +21,7 @@
         color: $primaryTextColor;
         font-size: 4rem;
         letter-spacing: 5px;
+        font-weight: 600;
         text-transform: uppercase;
         padding-left: 2rem;
 
