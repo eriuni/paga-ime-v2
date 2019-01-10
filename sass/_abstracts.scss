@@ -13,3 +13,25 @@
         transform: scale(1);
     }
 }
+
+.buton {
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    color: $primaryTextColor;
+    background-color: $primaryLightColor;
+    outline: 0;
+
+    &:hover {
+        background-color: $primaryDarkColor;
+        transform: scale(1.1);
+
+    }
+
+}
