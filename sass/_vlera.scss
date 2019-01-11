@@ -1,0 +1,32 @@
+.vlera {
+    padding: 2rem;
+    font-size: 2rem;
+    color: $secondaryTextColor;
+    background-color: $secondaryDarkColor;
+
+
+    grid-column: 1 / span 2;
+
+    &__paga {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+
+    grid-gap: 2rem;
+    justify-content: center;
+    align-content: center;
+    }
+
+    &__paga p {
+        text-align: right;
+        align-self: center;
+        justify-self: center;
+
+    }
+
+    &__vlerat {
+        font-size: 2.2rem;
+        font-weight: 600;
+        }
+
+
+}
