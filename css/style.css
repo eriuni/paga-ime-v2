@@ -16,7 +16,8 @@ body {
   line-height: 1.6; }
 
 .container {
-  padding: 3rem 50rem;
+  width: 50%;
+  margin: 3rem auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(auto-fit, 1fr); }
@@ -45,6 +46,11 @@ body {
   .buton:hover {
     background-color: #002984;
     transform: scale(1.1); }
+
+.vlerat {
+  font-size: 2.2rem;
+  font-weight: 600;
+  text-align: right; }
 
 .header {
   background-color: #757de8;
@@ -103,26 +109,24 @@ body {
   .vlera__paga {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    grid-gap: 2rem;
-    justify-content: center;
-    align-content: center; }
+    grid-gap: 2rem; }
   .vlera__paga p {
-    text-align: right;
     align-self: center;
     justify-self: center; }
   .vlera__vlerat {
     font-size: 2.2rem;
-    font-weight: 600; }
+    font-weight: 600;
+    text-align: right; }
 
 .detyrimet {
   padding: 2rem;
+  font-size: 1.6rem;
   color: #000000;
   background-color: #ffebee;
   grid-column: 1 / span 2;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
-  justify-content: center; }
+  grid-gap: 2rem; }
   .detyrimet__tap {
     grid-column: 1 / span 2;
     justify-self: center; }
@@ -134,6 +138,8 @@ body {
     justify-self: center; }
 
 .footer {
+  padding: 1rem;
+  font-size: 1.5rem;
   color: #ffffff;
   background-color: #757de8;
   grid-column: 1 / -1;
