@@ -8,6 +8,15 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 55%; } }
+  @media only screen and (max-width: 43.75em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 40%; } }
 
 body {
   font-family: "Nunito", sans-serif;
@@ -21,6 +30,16 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(auto-fit, 1fr); }
+  @media only screen and (max-width: 100em) {
+    .container {
+      width: 70%; } }
+  @media only screen and (max-width: 68.75em) {
+    .container {
+      width: 90%; } }
+  @media only screen and (max-width: 43.75em) {
+    .container {
+      width: 100%;
+      margin: 0; } }
 
 @keyframes pulse {
   from {
@@ -67,11 +86,17 @@ body {
     height: 6rem; }
   .header__title {
     color: #ffffff;
-    font-size: 6rem;
+    font-size: 5rem;
     letter-spacing: 5px;
     font-weight: 800;
     text-transform: uppercase;
     padding-left: 2rem; }
+    @media only screen and (max-width: 68.75em) {
+      .header__title {
+        font-size: 4rem; } }
+    @media only screen and (max-width: 43.75em) {
+      .header__title {
+        font-size: 3.5rem; } }
     .header__title:hover {
       animation: pulse 0.7s; }
 
