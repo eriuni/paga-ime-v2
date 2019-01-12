@@ -1,5 +1,6 @@
 .detyrimet {
     padding: 2rem;
+    font-size: 1.6rem;
     color: $secondaryTextColor;
     background-color: $secondaryColor;
 
@@ -8,12 +9,13 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
-    justify-content: center;
+    
 
     &__tap {
 
         grid-column: 1 / span 2;
         justify-self: center;
+        
 
     }
 
@@ -28,6 +30,7 @@
 
         grid-column: 2 / -1 ;
         justify-self: center;
+
 
     }
 }
