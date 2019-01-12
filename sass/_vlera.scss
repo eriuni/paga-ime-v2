@@ -7,27 +7,24 @@
 
     grid-column: 1 / span 2;
 
-    &__paga {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 
-    grid-gap: 2rem;
+
+    &__paga {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+
+        grid-gap: 2rem;
+
 
     }
 
     &__paga p {
+
         
-        align-self: center;
         justify-self: center;
-        
+        text-align: right;
 
     }
-
-    &__vlerat {
-        font-size: 2.2rem;
-        font-weight: 600;
-        text-align: right;
-        }
 
 
 }
