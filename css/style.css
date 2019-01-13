@@ -165,3 +165,11 @@ body {
   background-color: #757de8;
   grid-column: 1 / -1;
   text-align: center; }
+  .footer .link {
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: currentColor;
+    letter-spacing: 1px;
+    font-weight: 600; }
+    .footer .link:hover {
+      color: #002984; }
