@@ -8,18 +8,22 @@
 
     grid-column: 1 / -1;
     text-align: center;
-    
-
+        
     .link {
         font-size: 1.7rem;
         text-decoration: none;
         color: currentColor;
         letter-spacing: 1px;
         font-weight: 600;
+        text-shadow: 2px 2px 3px $secondaryTextColor;
+        display: inline-block;
+        transition: all .4s;
         
 
         &:hover{
             color: $primaryDarkColor;
+            transform: scale(1.1);
+            
             
         }
     }
