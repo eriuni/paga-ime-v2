@@ -19,7 +19,7 @@ html {
       font-size: 40%; } }
 
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #757de8;
   font-weight: 300;
   line-height: 1.6;
@@ -140,6 +140,7 @@ body {
   background-color: #ccb9bc;
   grid-column: 1 / span 2; }
   .vlera__paga {
+    font-family: "Josefin Sans", sans-serif;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     grid-gap: 2rem; }
@@ -157,9 +158,11 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   grid-gap: 2rem; }
   .detyrimet__punemarresi {
+    font-family: "Josefin Sans", sans-serif;
     justify-self: center;
     text-align: right; }
   .detyrimet__punedhenesi {
+    font-family: "Josefin Sans", sans-serif;
     justify-self: center;
     text-align: right; }
 
