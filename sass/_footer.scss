@@ -1,7 +1,7 @@
 .footer {
     padding: 1rem;
     font-size: 1.5rem;
-    
+    font-style: italic;
 
     color: $primaryTextColor;
     background-color: $primaryLightColor;
@@ -11,9 +11,10 @@
         
     .link {
         font-size: 1.7rem;
+        font-style: normal;
         text-decoration: none;
         color: currentColor;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
         font-weight: 600;
         text-shadow: 2px 2px 3px $secondaryTextColor;
         display: inline-block;
