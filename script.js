@@ -129,7 +129,7 @@ function llogaritja() {
     sigShendPunedh.innerHTML = Math.round(sigShendPuna) + " leke";
 }
 
-function addListAfterClick() {
+function bejLlogaritje() {
     if (Number(input.value) >= 21312) {
         llogaritja();
     } else {
@@ -138,4 +138,4 @@ function addListAfterClick() {
 
 }
 
-llogarit.addEventListener("click", addListAfterClick);
+llogarit.addEventListener("click", bejLlogaritje);
