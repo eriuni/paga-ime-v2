@@ -33,15 +33,15 @@ html {
     font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
 
     @media only screen and (max-width: $bp-large) {
-        font-size: 55%;
+        font-size: 60%;
     }
 
     @media only screen and (max-width: $bp-medium) {
-        font-size: 50%;
+        font-size: 55%;
     }
 
     @media only screen and (max-width: $bp-small) {
-        font-size: 40%;
+        font-size: 45%;
     }
 
 }
