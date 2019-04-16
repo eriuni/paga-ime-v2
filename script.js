@@ -22,13 +22,32 @@ function llogaritja() {
 	let sigShoqPunt;
 	let sigShendPunt;
 	let sigShoqPuna;
-	let sigShendPuna;
+	let sigShendPuna;	
 
 	if (zgjidhNeto.checked == false) {
 
 		pagaBruto = paga;
 
+		function sigShoqPuntori() {
+
+			if (pagaBruto > 105850) {
+				sigShoqPunt = 10056;
+				sigShendPunt = pagaBruto * 0.017;
+				sigShoqPuna = 15878;
+				sigShendPuna = pagaBruto * 0.017;
+			} else {
+				sigShoqPunt = pagaBruto * 0.095;
+				sigShendPunt = pagaBruto * 0.017;
+				sigShoqPuna = pagaBruto * 0.15;
+				sigShendPuna = pagaBruto * 0.017;
+			}
+
+		}
+
+		sigShoqPuntori();
+
 		let totalSigPunt = sigShoqPunt + sigShendPunt;
+
 
 		function tapa() {
 
@@ -45,6 +64,7 @@ function llogaritja() {
 		}
 
 		tapa();
+
 
 		pagaNeto = paga - totalSigPunt - tap;
 
@@ -90,6 +110,8 @@ function llogaritja() {
 
 	sigShoqPuntori();
 
+
+
 	pagaN.innerHTML = Math.round(pagaNeto) + " leke";
 	pagaB.innerHTML = Math.round(pagaBruto) + " leke";
 	tapi.innerHTML = Math.round(tap) + " leke";
@@ -107,7 +129,7 @@ function bejLlogaritje() {
 	} else {
 		alert("Ju lutem vendosni pagen neto minimale qe eshte 23,088 leke ose me shume.");
 	}
-	
+
 }
 
 llogarit.addEventListener("click", bejLlogaritje);
